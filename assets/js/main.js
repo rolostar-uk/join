@@ -64,8 +64,6 @@ if(form){
   const path = window.location.pathname;
   const isHome = /(^\/$|lander\.html$)/.test(path);
   if(!isHome) return;
-  if(sessionStorage.getItem('ageGateShown') === '1') return;
-  sessionStorage.setItem('ageGateShown', '1');
   const bd = document.createElement('div');
   bd.className = 'modal-backdrop';
   bd.innerHTML = `
@@ -94,8 +92,6 @@ if(form){
   const path = window.location.pathname;
   const isHome = /(^\/$|lander$)/.test(path);
   if(!isHome) return;
-  if(sessionStorage.getItem('ageGateShown') === '1') return;
-  sessionStorage.setItem('ageGateShown', '1');
   const bd = document.createElement('div');
   bd.className = 'modal-backdrop';
   bd.innerHTML = `
@@ -119,6 +115,4 @@ if(form){
                                                function(){
     window.location.href = "https://t1l9.com/?utm_campaign=xEp7N3tLMR&v1=[v1]&v2=[v2]&v3=[v3]"; // change to your target page
   }); 
-})();
-
 })();
