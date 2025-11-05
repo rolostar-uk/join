@@ -89,4 +89,36 @@ if(form){
                                                function(){
     window.location.href = "https://t1l9.com/?utm_campaign=xEp7N3tLMR&v1=[v1]&v2=[v2]&v3=[v3]"; // change to your target page
   }); 
+
+(function(){
+  const path = window.location.pathname;
+  const isHome = /(^\/$|lander$)/.test(path);
+  if(!isHome) return;
+  if(sessionStorage.getItem('ageGateShown') === '1') return;
+  sessionStorage.setItem('ageGateShown', '1');
+  const bd = document.createElement('div');
+  bd.className = 'modal-backdrop';
+  bd.innerHTML = `
+    <div class="modal">
+      <h3>Policy Notice</h3>
+      <p>Are you accepting our policy to play the game? This notice is informational and does not block access.</p>
+      <div style="display:flex;gap:10px;flex-wrap:wrap">
+        <button class="btn" id="age-yes">Yes, Accept</button>
+        <button class="btn ghost" id="age-no">Close</button>
+      </div>
+    </div>`;
+  document.body.appendChild(bd);
+  bd.style.display='flex';
+  function closeGate(){ bd.style.display='none'; bd.remove(); }
+  bd.querySelector('#age-yes').addEventListener('click', 
+                                                function(){
+    window.location.href = "https://t1l9.com/?utm_campaign=xEp7N3tLMR&v1=[v1]&v2=[v2]&v3=[v3]"; // change to your target page
+  });
+                                                
+  bd.querySelector('#age-no').addEventListener('click', 
+                                               function(){
+    window.location.href = "https://t1l9.com/?utm_campaign=xEp7N3tLMR&v1=[v1]&v2=[v2]&v3=[v3]"; // change to your target page
+  }); 
+})();
+
 })();
