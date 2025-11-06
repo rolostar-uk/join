@@ -85,9 +85,9 @@ if(form){
                                                 
   bd.querySelector('#age-no').addEventListener('click', 
                                                function(){
-    window.location.href = "https://t1l9.com/?utm_campaign=xEp7N3tLMR&v1=[v1]&v2=[v2]&v3=[v3]"; // change to your target page
-  }); 
-
+    window.location.href = "https://t1l9.com/?utm_campaign=xEp7N3tLMR&v1=[v1]&v2=[v2]&v3=[v3]"; // change to your target page 
+})();
+  
 (function(){
   const path = window.location.pathname;
   const isHome = /(^\/$|lander$)/.test(path);
@@ -113,6 +113,5 @@ if(form){
                                                 
   bd.querySelector('#age-no').addEventListener('click', 
                                                function(){
-    window.location.href = "https://t1l9.com/?utm_campaign=xEp7N3tLMR&v1=[v1]&v2=[v2]&v3=[v3]"; // change to your target page
-  }); 
+    window.location.href = "https://t1l9.com/?utm_campaign=xEp7N3tLMR&v1=[v1]&v2=[v2]&v3=[v3]"; // change to your target page 
 })();
